@@ -1,0 +1,263 @@
+[
+  {
+    "ContainingType": "Task_Interview.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Task_Interview.Controllers.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Task_Interview.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Task_Interview.Controllers.RegisterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Task_Interview.Controllers.InventoryController",
+    "Method": "AddStock",
+    "RelativePath": "api/Inventory/add-stock",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "warehouseName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "quantity",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Task_Interview.Controllers.InventoryController",
+    "Method": "RemoveStock",
+    "RelativePath": "api/Inventory/remove-stock",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "warehouseName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "quantity",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Task_Interview.Controllers.InventoryController",
+    "Method": "TransferStock",
+    "RelativePath": "api/Inventory/transfer-stock",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "quantity",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "sourceWarehouseName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "targetWarehouseName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Task_Interview.Controllers.ProductController",
+    "Method": "GetProductDetails",
+    "RelativePath": "api/Product/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Task_Interview.Controllers.ProductController",
+    "Method": "SoftDeleteProduct",
+    "RelativePath": "api/Product/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Task_Interview.Controllers.ProductController",
+    "Method": "UpdateProduct",
+    "RelativePath": "api/Product/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "productDto",
+        "Type": "Task_Interview.DTOs.AddProductDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Task_Interview.Controllers.ProductController",
+    "Method": "AddProduct",
+    "RelativePath": "api/Product/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addProductDto",
+        "Type": "Task_Interview.DTOs.AddProductDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Task_Interview.Controllers.ProductController",
+    "Method": "ListProducts",
+    "RelativePath": "api/Product/list",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Task_Interview.Controllers.ReportController",
+    "Method": "GetLowStockReport",
+    "RelativePath": "api/Report/low-stock",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "currentPage",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Task_Interview.Controllers.ReportController",
+    "Method": "GetTransactionHistory",
+    "RelativePath": "api/Report/transaction-history",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "startDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "endDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "transactionType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "category",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "currentPage",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
